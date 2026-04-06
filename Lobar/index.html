@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bazaar in Uzbekistan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Chorsu_Bazaar_Tashkent.jpg">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="nav">
+        <a href="#">Bosh sahifa</a>
+        <a href="#about">Bozor nima</a>
+        <a href="#chorsu">Chorsu</a>
+        <a href="#map">Xarita</a>
+    </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+        <h1>Bozorlar Dunyosi</h1>
+        <p>Sharqona savdo va madaniyat markazi</p>
+
+        <button onclick="showAbout()">Batafsil</button>
+    </div>
+</section>
+
+<!-- GENERAL ABOUT BAZAAR -->
+<section class="about" id="about">
+    <h2>Bozor nima?</h2>
+
+    <p>
+    "Bazar" (bozor) so‘zi asosan ikki xil ma’noda ishlatiladi:
+
+   1. Iqtisodiy ma’noda: Sotuvchi va xaridor uchrashadigan, mahsulot va xizmatlar ayirboshlanadigan joy yoki tizim. Bu nafaqat jismoniy joy (masalan, Chorsu bozori), balki internet do‘konlar yoki aksiyalar sotiladigan birjalar ham bo‘lishi mumkin.
+   2. Kundalik hayotda: Ochiq havoda yoki yopiq pavilyonlarda joylashgan, turli xil oziq-ovqat va buyumlar sotiladigan savdo majmuasi.
+
+Qisqa qilib aytganda, bozor — bu savdo-sotiq maydoni.
+Agar siz biron bir texnologik termin yoki platformani (masalan, "Bazar" ilovasi) nazarda tutgan bo‘lsangiz, aytsangiz aniqroq ma’lumot berishim mumkin.
+
+
+    </p>
+
+    <p>
+        Sharq mamlakatlarida bozorlar nafaqat savdo joyi, balki madaniyat,
+        an’ana va insonlar o‘rtasidagi muloqot markazi ham hisoblanadi.
+    </p>
+
+    <p>
+        Bu yerda mevalar, sabzavotlar, ziravorlar, kiyim-kechak va
+        milliy mahsulotlar sotiladi.
+    </p>
+</section>
+
+<!-- CHORSU SECTION -->
+<section class="gallery" id="chorsu">
+    <h2>Chorsu bozori</h2>
+
+    <div class="images">
+        <img src="chorsu.jfif">
+        <img src="chorsu ichki qism.jfif">
+        <img src="jarayon.jfif">
+    </div>
+</section>
+
+<!-- INFO -->
+<section class="info" id="info">
+    <h2>Chorsu haqida</h2>
+
+    <p>
+        Chorsu (Forscha: Chor-su – „toʻrt yoʻl“ yoki „toʻrt ariq“) nomi bilan mashhur boʻlgan „Eski Juva“ („Eski minora“) bozori eski shaharda toʻrtta savdo koʻchalari chorrahasida joylashgan boʻlib, yil boʻyi oʻzining rang-barang buyumlari va meʼmoriy tuzilishi, qadimiylik va xalq madaniyati nafasi bilan odamlarni hayratga soladi. „Chorsu“ bozori Oʻzbekiston va Markaziy Osiyodagi eng yirik bozorlardan biri boʻlib, Toshkent shahrining „Eski shahar“ deb nomlangan eski qismida, Shayhontoxur tumani, Navoiy koʻchasida joylashgan. „Chorsu“ bozori oʻrta asrlarda maʼlum boʻlgan va Buyuk ipak yoʻlida katta ahamiyatga ega edi[1][2].
+    </p>
+
+    <p>
+        Bozor shiftining bezaklar bilan qoplangan markaziy qismida diametri taxminan 300-350 metr boʻlgan monumental gumbazli inshoot – bozorning lift tizimiga ega qishki uch qavatli binosi joylashgan. Pastki qavatda koʻplab xonalarga ega podval yoʻlaklari mavjud. Savdo rastalari oʻrta va yuqori qavatlarda joylashgan. Bozordagi savdo qatorlari ularda sotiladigan tovarlar turlariga koʻra boʻlinadi: sabzavotlar, mevalar, yongʻoqlar, sharqona shirinliklar, ziravorlar, donlar. Kiyim va uy-roʻzgʻor buyumlari uchun alohida pavilyonlar mavjud.
+    </p>
+
+    <p>
+        Bugungi kunda bu bozor zamonaviy va an’anaviy savdoni o‘zida mujassam etadi.
+    </p>
+</section>
+
+<!-- MAP -->
+<section class="map" id="map">
+    <h2>Joylashuvi</h2>
+
+    <iframe 
+        src="https://maps.google.com/maps?q=Chorsu%20Bazaar%20Tashkent&t=&z=15&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+</section>
+
+<script>
+function showAbout(){
+    document.getElementById("about").scrollIntoView({behavior:"smooth"});
+}
+
+function toggleMenu(){
+    document.getElementById("nav").classList.toggle("active");
+}
+</script>
+<div id="adVideo" class="ad-video">
+
+    <div class="ad-box">
+        <span class="close-btn" onclick="closeAd()">✖</span>
+
+        <video id="promoVideo" controls>
+            <source src="lobar.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+</body>
+</html>
